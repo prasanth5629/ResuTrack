@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Neon Glow Effect */
+.neon-text {
+    text-shadow: 0 0 5px #00e676, 0 0 10px #00e676, 0 0 20px #00e676, 0 0 30px #00e676, 0 0 40px #00e676;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Left Side: Login Form */
+.left-side {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00e676;
+    text-shadow: 0 0 5px #00e676;
+}
+
+.left-side h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00e676;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.login-form input:focus {
+    border-color: #00ffcc;
+    outline: none;
+    box-shadow: 0 0 5px #00ffcc;
+}
+
+.login-form button {
+    background: #00e676;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+    background: #00ffcc;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #00e676;
+}
+
+.register-link a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Right Side: Branding */
+.right-side {
+    flex: 1;
+    background: linear-gradient(135deg, #009688, #4caf50, #8bc34a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.right-side h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #00e676;
+}
+
+.right-side p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .left-side, .right-side {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right-side {
+        padding: 40px;
+    }
+}

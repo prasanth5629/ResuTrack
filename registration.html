@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Resume Tracker ATS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            overflow: hidden;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Container Styling */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            animation: slideIn 1.5s ease-out;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #00e676;
+            text-shadow: 0 0 5px #00e676, 0 0 15px #00e676;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #00e676;
+            font-size: 1em;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #00ffcc;
+            outline: none;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+
+        .btn {
+            padding: 12px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            background-color: #00e676;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00ffcc;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ffcc;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .login-link a {
+            color: #00e676;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Error Message Styling */
+        .error {
+            color: #ff0033;
+            font-size: 0.9em;
+            margin-top: -15px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background: #2c5364;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .popup-content h2 {
+            color: #00e676;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .popup-content p {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .popup-content .btn {
+            background-color: #00e676;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .popup-content .btn:hover {
+            background-color: #00ffcc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registrationForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            <div class="error" id="passwordError">Passwords do not match!</div>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Registration Successful!</h2>
+            <p>You have successfully registered. Now, go back to the login page.</p>
+            <a href="login.html" class="btn">Go to Login</a>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('registrationForm');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirm-password');
+        const passwordError = document.getElementById('passwordError');
+        const popup = document.getElementById('popup');
+
+        form.addEventListener('submit', (e) => {
+            if (password.value !== confirmPassword.value) {
+                e.preventDefault(); // Prevent form submission
+                passwordError.style.display = 'block'; // Show error message
+            } else {
+                e.preventDefault(); // Prevent form submission to show the popup
+                passwordError.style.display = 'none'; // Hide error message
+                popup.style.display = 'flex'; // Show popup
+            }
+        });
+    </script>
+</body>
+</html>
