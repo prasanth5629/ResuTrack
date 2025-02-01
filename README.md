@@ -1,33 +1,27 @@
 # ResuTrack
-ResuTrack – AI-Powered Resume Tracker ATS
+**ResuTrack – AI-Powered Resume Tracker ATS**
 
 🚀 An AI-powered Applicant Tracking System (ATS) that analyzes resumes, compares them with job descriptions, and provides AI-driven insights for recruiters and job seekers.
 
+<img width="1000" alt="Screenshot 2025-02-01 at 12 41 51 PM" src="https://github.com/user-attachments/assets/45e06aab-d59c-4e2e-8306-57131e28e221" />
 
 
-📌 Features
+## 📌 Features
 
-✅ AI-Powered Resume Parsing (LLMs – ChatGPT, LangChain)
+- **✅ AI-Powered Resume Parsing (LLMs – ChatGPT, LangChain)**
+- **✅ Job Description Matching & Candidate Ranking**
+- **✅ Real-Time Feedback & ATS Score Calculation**
+- **✅ Secure Authentication & Data Handling**
+- **✅ Interactive Web Dashboard (React + Flask/FastAPI)**
+- **✅ Cloud Deployment (AWS/GCP)**
 
-✅ Job Description Matching & Candidate Ranking
+## 🛠 Tech Stack
 
-✅ Real-Time Feedback & ATS Score Calculation
+- **✅ Frontend: HTML, CSS, Javascript**
+- **✅ Backend: Flask / FastAPI, Streamlit**
+- **✅ AI Models: OpenAI’s GPT, BERT**
 
-✅ Secure Authentication & Data Handling
-
-✅ Interactive Web Dashboard (React + Flask/FastAPI)
-
-✅ Cloud Deployment (AWS/GCP)
-
-🛠 Tech Stack
-
-✅ Frontend: HTML, CSS, Javascript
-
-✅ Backend: Flask / FastAPI, Streamlit
-
-✅ AI Models: OpenAI’s GPT, BERT
-
-🚀 Installation & Setup
+## 🚀 Installation & Setup
 
 1️⃣ Clone the Repository
 
@@ -49,43 +43,36 @@ Create a .env file for the backend and add:
 
 5️⃣ Now you can run the index.html
 
-📌 How to Use?
+## 📌 How to Use?
 
-1.	Upload a Resume – Upload a PDF or DOCX file.
+- **Upload a Resume – Upload a PDF or DOCX file.**
+- **Enter Job Description – Paste the job description for matching.**
+- **Get AI Insights – View ATS score, keyword matching, and recommendations.**
+- **Download Report – Save the analysis for future reference.**
 
-2.	Enter Job Description – Paste the job description for matching.
+## 🔗 Live Demo
 
-3.	Get AI Insights – View ATS score, keyword matching, and recommendations.
 
-4.	Download Report – Save the analysis for future reference.
 
-🔗 Live Demo (If hosted online, add the link)
+https://github.com/user-attachments/assets/bea7e3e3-c3ba-4246-8340-a466e19d187d
 
-🌐 ResuTrack Live
 
-💡 Future Enhancements
 
-🔹 ML-Based Resume Scoring
+## 💡 Future Enhancements
 
-🔹 Automated Job Recommendations
+- **🔹 ML-Based Resume Scoring**
+- **🔹 Automated Job Recommendations**
+- **🔹 Integration with LinkedIn & Job Portals**
+- **🔹 Advanced Security Measures (OAuth, JWT, Role-Based Access)**
 
-🔹 Integration with LinkedIn & Job Portals
-
-🔹 Advanced Security Measures (OAuth, JWT, Role-Based Access)
-
-📩 Contributing
+## 📩 Contributing
 
 Want to improve ResuTrack? Follow these steps:
+- **Fork the repository.**
+- **Create a new branch (feature-name).**
+- **Commit your changes.**
+- **Submit a Pull Request.**
 
-1.	Fork the repository.
-
-2.	Create a new branch (feature-name).
-
-3.	Commit your changes.
-
-4.	Submit a Pull Request.
-
-🙌 Connect with Me
-
-👤 Prasanth
-📧 Email: prasanthkumarkarri5629@gmail.com
+## 🙌 Connect with Me
+- **👤 Prasanth Kumar Karri**
+- 📧 Email: prasanthkumarkarri5629@gmail.com
