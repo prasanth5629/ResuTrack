@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Tracker ATS using LLM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <a href="index.html">ResuTrack</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#recruiter">For Recruiters</a></li>
+                <li><a href="#candidate">For Candidates</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="login.html" class="btn login-btn">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>AI-Powered Resume Tracker</h1>
+                <p>AI-driven resume tracking for recruiters and candidates.</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn primary-btn">Get Started</a>
+                    <a href="#features" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <main>
+        <section id="features" class="features-section">
+            <h2>Key Features</h2>
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">📄</div>
+                    <h3>Smart Resume Parsing</h3>
+                    <p>Efficient extraction and analysis of candidate information.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Candidate Matching</h3>
+                    <p>Advanced algorithms ensure the best candidate-job fit.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Bias Reduction</h3>
+                    <p>Promoting diversity and inclusion in recruitment.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Real-Time Feedback</h3>
+                    <p>Instant resume evaluation for candidates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Sections with Tabs -->
+        <section class="user-section">
+            <div class="container">
+                <div class="user-tabs">
+                    <button class="tab-button active" data-tab="recruiter">For Recruiters</button>
+                    <button class="tab-button" data-tab="candidate">For Candidates</button>
+                </div>
+                <div class="tab-content active" id="recruiter">
+                    <h2>Streamline Your Hiring Process</h2>
+                    <p>Our system automates the tedious tasks of resume sorting and candidate evaluation. Enjoy faster placements, reduce biases, and make data-driven decisions with real-time analytics.</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📈</div>
+                            <h4>Data-Driven Insights</h4>
+                            <p>Make informed hiring decisions based on comprehensive candidate analysis.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚙️</div>
+                            <h4>Seamless Integration</h4>
+                            <p>Integrate effortlessly with your existing Applicant Tracking System.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏳</div>
+                            <h4>Time-Saving Automation</h4>
+                            <p>Reduce time spent on resume screening with intelligent automation.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔒</div>
+                            <h4>Secure & Compliant</h4>
+                            <p>Ensure candidate data security and comply with hiring regulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="candidate">
+                    <h2>Enhance Your Job Search</h2>
+                    <p>Receive instant feedback on your resume, improve your chances of landing interviews, and understand what recruiters are looking for.</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📝</div>
+                            <h4>Personalized Feedback</h4>
+                            <p>Get tailored suggestions to improve your resume and job application.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📊</div>
+                            <h4>Job Matching Insights</h4>
+                            <p>Discover how well your skills align with job requirements.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📅</div>
+                            <h4>Interview Preparation</h4>
+                            <p>Receive tips and resources to prepare for interviews effectively.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💼</div>
+                            <h4>Network Opportunities</h4>
+                            <p>Connect with industry professionals and potential employers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>User Testimonials</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <blockquote>"This tool has transformed our hiring process!"</blockquote>
+                        <cite>- Jane Doe, HR Manager</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>"The feedback I received on my resume was invaluable!"</blockquote>
+                        <cite>- John Smith, Job Seeker</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>"Incredible insights and recommendations. Highly recommend!"</blockquote>
+                        <cite>- Mark Johnson, Recruitment Specialist</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>"A game-changer for my job search. I feel more confident!"</blockquote>
+                        <cite>- Emily Davis, Job Seeker</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to request a demo, feel free to reach out!</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#recruiter">For Recruiters</a>
+                <a href="#candidate">For Candidates</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook">🔵</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <!-- Add more social icons as needed -->
+            </div>
+            <p>&copy; 2024 Resume Tracker ATS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Tabs, Smooth Scroll and Carousel -->
+    <script src="script.js"></script>
+</body>
+
+</html>
